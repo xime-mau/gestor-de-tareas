@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <title>Gestor de Tareas - Parte 1</title>
+  <link rel="stylesheet" href="tareas.css">
+</head>
+<body>
+  <ul id="task-list"></ul>
+    <h1>Organizadores de tareas</h1>
+   
+      <div class="container">
+        <button id="tareanueva">Tarea nueva</button>
+        <form id="form" class="hidden">
+          <input type="text" id="task-title" placeholder="Título de la tarea" required>
+          <input type="date" id="task-date" required>
+          <textarea id="description" placeholder="Descripción de la tarea" rows="4" required></textarea>
+          <div class="buttons">
+            <button type="submit">Añadir</button>
+            <button type="button" id="close">Cerrar</button>
+          </div>
+        </form>
+      </div>
+      <dialog class="confirm-dialog" id="confirmDialog">
+        <h2>¿Estás seguro de que deseas eliminar esta tarea?</h2>
+        <div class="buttons">
+            <button id="confirmYes">Sí</button>
+            <button id="confirmNo">No</button>
+        </div>
+    </dialog>
+     
+  <script src="tareas.js"></script>
+</body>
+</html>
+
